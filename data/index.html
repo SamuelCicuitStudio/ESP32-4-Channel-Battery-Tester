@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BQ2589x Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="chip-overlay">
+      <h1>BQ2589x Charger Monitor</h1>
+      <div class="status-section">
+        <div class="monitor-group">
+          <h2>Live Monitoring</h2>
+          <ul>
+            <li>Battery Voltage: <span id="batteryVoltage">4.12 V</span></li>
+            <li>System Voltage: <span id="systemVoltage">3.98 V</span></li>
+            <li>VBUS Voltage: <span id="vbusVoltage">5.10 V</span></li>
+            <li>Charge Current: <span id="chargeCurrent">850 mA</span></li>
+            <li>Temperature: <span id="temperature">31.5 °C</span></li>
+            <li>Charging Status: <span id="chargingStatusText">Fast Charging</span></li>
+          </ul>
+        </div>
+
+        <div class="settings-group">
+          <h2>Charging Settings</h2>
+          <label>Charge Voltage (mV): <input type="number" id="chargeVoltage" value="4200" /></label>
+          <label>Charge Current (mA): <input type="number" id="chargeCurrentSet" value="1000" /></label>
+          <label>Input Voltage Limit (mV): <input type="number" id="inputVoltLimit" value="4400" /></label>
+          <label>Input Current Limit (mA): <input type="number" id="inputCurrLimit" value="1500" /></label>
+
+          <div class="button-row">
+            <button onclick="applySettings()">✅ Apply Settings</button>
+            <button onclick="toggleCharging()">⚡ Toggle Charging</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
