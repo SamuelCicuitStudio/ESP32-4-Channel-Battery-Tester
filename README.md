@@ -4,6 +4,12 @@
 This project implements a **4-channel battery charging and monitoring system** using an **ESP32**, **BQ2589x charger ICs**, **ACS781 current sensors**, **TCA9548A I2C multiplexer**, and **74HC595 shift registers**.  
 Each battery channel supports real-time telemetry, RGB status indication, load-based capacity estimation, and user-triggered commands via a shared button.
 
+## Hardware (3D)
+
+<img src="Hardware/3D/3D_PCB1_2026-01-10.png" width="700" />
+<img src="Hardware/3D/3D_PCB1_2026-01-10%20%281%29.png" width="700" />
+<img src="Hardware/3D/3D_PCB1_2026-01-10%20%282%29.png" width="700" />
+
 ---
 
 ## 📘 Class Overview
